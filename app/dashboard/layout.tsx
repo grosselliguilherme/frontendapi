@@ -25,7 +25,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link text-warning fw-semibold" href="/dashboard">
+              <a className="nav-link text-warning fw-semibold" href="/">
                 Home
               </a>
             </li>
@@ -37,6 +37,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             <li className="nav-item">
               <a className="nav-link text-light" href="/dashboard/profiles">
                 Profiles
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-light" href="/dashboard/discs">
+                Discos
               </a>
             </li>
           </ul>
