@@ -4,8 +4,8 @@ import PublicHeader from "@/components/layout/PublicHeader";
 import PublicFooter from "@/components/layout/PublicFooter";
 
 export const metadata: Metadata = {
-  title: "Meu App",
-  description: "App Next da CC UPF",
+  title: "S&G Discos",
+  description: "Projeto API 2025",
 };
 
 export default function RootLayout({
@@ -24,8 +24,12 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body>
-        { /* Aqui nosso template, o componente page inicial com 2 subcomponentes */ }
+      <body style={{
+        backgroundColor: "#121212", // fundo preto suave
+        color: "#F5F5F5", // texto branco quebrado
+      }}
+      >
+        { /* Aqui nosso template, o componente page inicial com 2 subcomponentes */}
         <div className="min-vh-100 d-flex flex-column">
           <PublicHeader />
           <main className="flex-grow-1">{children}</main>

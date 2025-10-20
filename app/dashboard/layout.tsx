@@ -12,21 +12,32 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   }, [router]);
 
   return <>
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-md"
+      style={{
+        backgroundColor: "#2E4057",
+        borderBottom: "2px solid #D72638",
+      }}
+    >
       <div className="container-fluid">
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" style={{ filter: "invert(100%)" }}></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/dashboard">Home</a>
+              <a className="nav-link text-warning fw-semibold" href="/dashboard">
+                Home
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/dashboard/users">Users</a>
+              <a className="nav-link text-light" href="/dashboard/users">
+                Users
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/dashboard/profiles">Profiles</a>
+              <a className="nav-link text-light" href="/dashboard/profiles">
+                Profiles
+              </a>
             </li>
           </ul>
         </div>
